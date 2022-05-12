@@ -8,7 +8,7 @@ export default function PlayerList() {
     const loadData = async () => {
       try {
         const response = await axios.get(
-          `${process.env.REACT_APP_API_HOST}/players`
+          `${process.env.REACT_APP_API}/players`
         );
         setPlayers(response.data);
       } catch (err) {
